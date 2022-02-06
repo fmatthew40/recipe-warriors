@@ -6,21 +6,32 @@ body, html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Arima Madurai', cursive;
+  font-family: 'Playfair Display', serif;
   color: #333;
+  background: 
+  radial-gradient(black 3px, transparent 4px),
+  radial-gradient(black 3px, transparent 4px),
+  linear-gradient(#fff 4px, transparent 0),
+  linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+  linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #B48E92;
+  font-size:2.5em;
   font-weight: bold;
   transition: color .1s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #280137;
 }
-
+/*
 button {
   background-color: #225ca3;
   border: 0;
@@ -35,6 +46,39 @@ button {
 button:hover {
   background-color: #3486eb;
 }
+*/
+button {
+font-family: 'Arima Madurai', cursive;
+font-family: 'Playfair Display', serif;
+outline: 0;
+grid-gap: 8px;
+align-items: center;
+background-color: #B48E92;
+color: #000;
+border: 1px solid #000;
+border-radius: 4px;
+cursor: pointer;
+display: inline-flex;
+flex-shrink: 0;
+font-size: 16px;
+gap: 8px;
+justify-content: center;
+line-height: 1.5;
+overflow: hidden;
+padding: 12px 16px;
+text-decoration: none;
+text-overflow: ellipsis;
+transition: all .14s ease-out;
+white-space: nowrap;
+}
+button:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px,-4px);
+}
+button:focus-visible{
+    outline-offset: 1px;
+}
+
 
 .post-list {
   margin: 0;
