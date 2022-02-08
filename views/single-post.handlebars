@@ -1,3 +1,6 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
+<link rel="stylesheet" href="/raty/jquery.raty.css">
+
 {{> post-info post}}
 
 {{#if loggedIn}}
@@ -9,6 +12,11 @@
   <div>
     <button type="submit">add review</button>
     <button type="button" class="upvote-btn">upvote</button>
+
+    <div >
+        <div class="solid-stars" data-id="432" data-score="1"></div>
+    </div>
+    
   </div>
 </form>
 {{/if}}
@@ -18,4 +26,12 @@
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
 <script src="/javascript/upvote.js"></script>
+
 {{/if}}
+
+<script src="/raty/jquery.raty.js"></script>
+<script src="/javascript/stars.js"></script>
+
+
+
+

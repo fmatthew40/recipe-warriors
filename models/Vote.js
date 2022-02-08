@@ -23,6 +23,14 @@ Vote.init(
         model: 'post',
         key: 'id'
       }
+    },
+    star_rating: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'post',
+        key: 'id'
+      }
+      
     }
   },
   {
