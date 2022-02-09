@@ -29,14 +29,14 @@
 
 async function starFormHandler(event) {
   event.preventDefault();
-
-  const star_rating = document.querySelector('.solid-stars').value;
+  const star_rating = event.target.getAttribute('data-alt');//document.querySelector('.solid-stars').value;
   const post_id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
 
+  console.log(`star rating: ${star_rating}`)
   if (star_rating) {
-    const response = await fetch('/api/upvote', {
+    const response = fetch('/api/posts/upvote', {
       method: 'PUT',
       body: JSON.stringify({
         post_id,
@@ -51,7 +51,7 @@ async function starFormHandler(event) {
       console.log();
       document.location.reload();
     } else {
-      alert(response.statusText);
+      // alert(response.statusText);
     }
   }
 }

@@ -7,19 +7,23 @@ const votedata = [
   },
   {
     user_id: 1,
-    post_id: 8
+    post_id: 1,
+    star_rating: 3
   },
   {
     user_id: 8,
-    post_id: 12
+    post_id: 1,
+    star_rating: 4
   },
   {
     user_id: 8,
-    post_id: 19
+    post_id: 1,
+    star_rating: 5
   },
   {
     user_id: 9,
-    post_id: 3
+    post_id: 1,
+    star_rating: 3
   },
   {
     user_id: 3,
