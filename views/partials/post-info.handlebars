@@ -3,10 +3,10 @@
     <a href="{{post_url}}" target="_blank">{{title}}</a>
     <span>({{format_url post_url}})</span>
   </div>
+  <img src="{{picture_url}}"/>
   <div class="meta">
     {{star_rating}} {{format_plural "star" star_rating}} by {{user.username}} on {{format_date created_at}}
     |
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
-    <img src="{{picture_url}}"/>
   </div>
 </article>
