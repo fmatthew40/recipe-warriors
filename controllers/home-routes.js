@@ -91,6 +91,11 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
+router.get('/about', (req, res) => {
+  
+
+  res.render('about-me');
+});
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');

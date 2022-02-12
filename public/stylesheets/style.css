@@ -8,6 +8,7 @@ body, html {
   margin: 0;
   font-family: 'Arima Madurai', cursive;
   font-family: 'Playfair Display', serif;
+  font-weight: 700;
   color: #333;
   background: 
   radial-gradient(black 3px, transparent 4px),
@@ -19,6 +20,7 @@ body, html {
   background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
+
 
 a {
   text-decoration: none;
@@ -50,6 +52,7 @@ button:hover {
 button {
 font-family: 'Arima Madurai', cursive;
 font-family: 'Playfair Display', serif;
+font-weight: 700;
 outline: 0;
 grid-gap: 8px;
 align-items: center;
@@ -123,7 +126,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1%;
+  padding: 2%;
 }
 
 header h1 {
@@ -167,16 +170,17 @@ main {
   cursor: pointer;
   display: inline-flex;
   flex-shrink: 0;
-  font-size: 18px;
+  font-size: 16px;
   gap: 8px;
   justify-content: center;
   line-height: 1.5;
   overflow: hidden;
-  padding: 12px 16px;
+  padding: 10px 24px;
   text-decoration: none;
   text-overflow: ellipsis;
   transition: all .14s ease-out;
   white-space: nowrap;
+  
   }
   button:hover {
       box-shadow: 4px 4px 0 #280137;
