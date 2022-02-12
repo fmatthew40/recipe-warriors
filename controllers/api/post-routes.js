@@ -12,8 +12,9 @@ router.get('/', (req, res) => {
       'post_url',
       'title',
       'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-    ],
+      'star_rating',
+      // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+      [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating)']     ],
     include: [
       {
         model: Comment,
@@ -46,8 +47,10 @@ router.get('/:id', (req, res) => {
       'post_url',
       'title',
       'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-    ],
+      'star_rating',
+      [sequelize.literal('(SELECT AVG(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+      // [sequelize.literal('SELECT AVG(star_rating) FROM vote where post_id;'), 'star_rating']   
+     ],
     include: [
       {
         model: Comment,
