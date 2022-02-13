@@ -21,6 +21,9 @@ body, html {
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
+.post {
+  background-color: rgb(211, 211, 211, 0.7);
+}
 
 a {
   text-decoration: none;
