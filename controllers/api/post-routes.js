@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'picture_url',
       'title',
       'created_at',
       'star_rating',
@@ -45,6 +46,7 @@ router.get('/:id', (req, res) => {
     attributes: [
       'id',
       'post_url',
+      'picture_url',
       'title',
       'created_at',
       'star_rating',

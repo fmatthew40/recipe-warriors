@@ -15,6 +15,7 @@ class Post extends Model {
         attributes: [
           'id',
           'post_url',
+          'picture_url',
           'title',
           'created_at',
           'star_rating',
@@ -61,9 +62,6 @@ Post.init(
     picture_url: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isURL: true
-      }
     },
     user_id: {
       type: DataTypes.INTEGER,
