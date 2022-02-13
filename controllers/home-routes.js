@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
       'title',
       'created_at',
       // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-      [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating)']
+      [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating']
     ],
     include: [
       {
@@ -56,7 +56,7 @@ router.get('/post/:id', (req, res) => {
       'picture_url',
       'title',
       'created_at',
-      [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating)']
+      [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating']
       // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
     ],
     include: [
@@ -81,6 +81,7 @@ router.get('/post/:id', (req, res) => {
       }
 
       const post = dbPostData.get({ plain: true });
+      console.log(post);
 
       res.render('single-post', {
         post,

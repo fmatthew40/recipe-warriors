@@ -15,13 +15,12 @@ class Post extends Model {
         attributes: [
           'id',
           'post_url',
-          'picture_url',
           'title',
           'created_at',
           'star_rating',
           // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
 
-          [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating)']
+          [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating']
 
         ],
         include: [
@@ -62,6 +61,9 @@ Post.init(
     picture_url: {
       type: DataTypes.STRING,
       allowNull: false,
+      validate: {
+        isURL: true
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
