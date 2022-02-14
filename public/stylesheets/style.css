@@ -130,6 +130,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2%;
+  background-color: rgb(0,0,139, 0.1);
+  width: 100%;
 }
 
 header h1 {
