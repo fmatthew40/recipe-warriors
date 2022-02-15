@@ -33,7 +33,27 @@ ul {
 }
 
 .post {
+  padding: 20px;
   background-color: rgb(211, 211, 211, 0.7);
+  border-radius: 20%;
+}
+
+.comment-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-body{
+width: 500px;
+height: 120px;
+border: 3px solid #000;
+padding: 20px;
+font-family: Tahoma, sans-serif;
+}
+
+.comment-button {
+  padding: 20px;
 }
 
 a {
@@ -293,7 +313,7 @@ main {
 
 .title {
   text-align: center;
-  font-size: xxx-large;
+  font-size: x-large;
   color: #B48E92;
   border-bottom: 1px solid #000;
 }
