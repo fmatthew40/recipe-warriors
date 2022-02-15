@@ -1,3 +1,6 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
+<link rel="stylesheet" href="/raty/jquery.raty.css">
+
 <article class="post">
   <div class="title">
     <a href="{{post_url}}" target="_blank">{{title}}</a>
@@ -8,7 +11,17 @@
    {{star_rating}} {{format_plural "star"}} on {{format_date created_at}}
       {{!-- {{star_rating}} {{format_plural "star"}} last rated by {{user.username}} on {{format_date created_at}}   --}}
     |
+       <div >
+        <div class="solid-stars" data-id="432" data-score="1"></div>
+    </div>
+
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
   </div>
   
 </article>
+
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+
+<script src="/raty/jquery.raty.js"></script>
+<script src="/javascript/stars.js"></script>
