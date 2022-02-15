@@ -6,19 +6,15 @@
 {{#if loggedIn}}
 <form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea class="comment-body" name="comment-body"></textarea>
   </div>
-
-  <div>
+  <div class="comment-button">
     <button type="submit">add review</button>
-    {{!-- <button type="button" class="upvote-btn">upvote</button> --}}
-
-    <div >
-        <div class="solid-stars" data-id="432" data-score="1"></div>
-    </div>
-    
   </div>
 </form>
+<div >
+  <div class="solid-stars" data-id="432" data-score="1"></div>
+</div>
 {{/if}}
 
 {{> comments post.comments}}

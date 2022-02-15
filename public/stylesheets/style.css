@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 body, html {
@@ -8,16 +9,51 @@ body, html {
   margin: 0;
   font-family: 'Arima Madurai', cursive;
   font-family: 'Playfair Display', serif;
+  font-weight: 700;
   color: #333;
   background: 
-  radial-gradient(black 3px, transparent 4px),
-  radial-gradient(black 3px, transparent 4px),
+  radial-gradient(grey 3px, transparent 4px),
+  radial-gradient(grey 3px, transparent 4px),
   linear-gradient(#fff 4px, transparent 0),
   linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
   linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
   #fff;
   background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+img{
+  width: 300px;
+  height: auto;
+  border: 5px solid #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.post {
+  padding: 20px;
+  background-color: rgb(211, 211, 211, 0.7);
+  border-radius: 20%;
+}
+
+.comment-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-body{
+width: 500px;
+height: 120px;
+border: 3px solid #000;
+padding: 20px;
+font-family: Tahoma, sans-serif;
+}
+
+.comment-button {
+  padding: 20px;
 }
 
 a {
@@ -50,6 +86,7 @@ button:hover {
 button {
 font-family: 'Arima Madurai', cursive;
 font-family: 'Playfair Display', serif;
+font-weight: 700;
 outline: 0;
 grid-gap: 8px;
 align-items: center;
@@ -89,6 +126,7 @@ textarea, input {
   padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
+  width: 25%;
 }
 
 textarea:focus, input:focus {
@@ -123,17 +161,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1%;
+  padding: 2%;
+  background-color: rgb(0,0,139, 0.1);
+  width: 100%;
+  
 }
 
 header h1 {
   font-size: 1em;
+
 }
 
 main {
   flex: 1;
   padding: 2% 4%;
+  text-align: center;
 }
+
+
 /*
 .btn-no-style {
   background: none;
@@ -167,16 +212,17 @@ main {
   cursor: pointer;
   display: inline-flex;
   flex-shrink: 0;
-  font-size: 18px;
+  font-size: 16px;
   gap: 8px;
   justify-content: center;
   line-height: 1.5;
   overflow: hidden;
-  padding: 12px 16px;
+  padding: 10px 24px;
   text-decoration: none;
   text-overflow: ellipsis;
   transition: all .14s ease-out;
   white-space: nowrap;
+  
   }
   button:hover {
       box-shadow: 4px 4px 0 #280137;
@@ -185,6 +231,11 @@ main {
   button:focus-visible{
       outline-offset: 1px;
   }
+
+.login-form, .signup-form {
+  text-align: center;
+  font-size: xx-large;
+}
 
 .delete-post-btn {
   background-color: #d41414;
@@ -198,6 +249,7 @@ main {
   margin-bottom: 2%;
   line-height: 150%;
 }
+
 
 .post .title span {
   font-style: italic;
@@ -220,15 +272,12 @@ main {
 }
 
 .comment-form {
-  margin-bottom: 5%;
+  
 }
 
 .comment {
   padding: 1%;
   margin-bottom: 1%;
-}
-
-.comment:nth-child(odd) {
   background-color: #fff5eb;
 }
 
@@ -242,8 +291,32 @@ main {
   width: 300px;
 }
 
+
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+.bio-section {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  font-size: 23px;
+  background-color: rgb(184, 125, 131, 0.9) ;
+}
+.bio-info {
+  padding: 25px;
+  line-height: 1.6;
+}
+
+.title {
+  text-align: center;
+  font-size: x-large;
+  color: #B48E92;
+  border-bottom: 1px solid #000;
+}
+
+.name {
+  font-size: xx-large;
 }
 
 footer {

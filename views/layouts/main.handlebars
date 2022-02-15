@@ -4,16 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Warriors</title>
+  <title>Recipe Warriors </title>
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="/raty/jquery.raty.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
+  <header>
       <h1>
         <a href="/">Recipe Warriors</a>
+      </h1>
+      <h1>
+        <a href="/about">About The Crew!</a>
       </h1>
       <nav>
         {{#if loggedIn}}
@@ -24,11 +26,13 @@
         {{/if}}
       </nav>
     </header>
+  <div class="wrapper">
     <main>
       {{{ body }}}
     </main>
     <footer>
       &copy Recipe Warriors 2022
+
     </footer>
   </div>
   
