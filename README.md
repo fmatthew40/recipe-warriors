@@ -12,7 +12,7 @@
   6.  [Contributing](#contributing)
 
  ## Screenshot
- 
+ ![Uploading recipe.png…]()
 
  ## Description
  The application compares user images to website recipes.  
@@ -24,7 +24,7 @@
 
  ## Website
  Below is the link to the deployed application.  
-
+ https://recipe-warriors.herokuapp.com/
 
  ## Usage 
  The project's intended use is to display recipes from other websites.  The user then can make that recipe and then compare how their recipe came out.  The user can compare their recipe by adding a picture.  Others can rate recipe according to how close the recipe looks like the original recipe.  
