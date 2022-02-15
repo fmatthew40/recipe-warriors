@@ -9,6 +9,7 @@ async function starFormHandler(event) {
 
   console.log(`star rating: ${star_rating}`)
   if (star_rating) {
+    
     const response = fetch('/api/posts/upvote', {
       method: 'PUT',
       body: JSON.stringify({
