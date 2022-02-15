@@ -12,8 +12,8 @@ body, html {
   font-weight: 700;
   color: #333;
   background: 
-  radial-gradient(black 3px, transparent 4px),
-  radial-gradient(black 3px, transparent 4px),
+  radial-gradient(grey 3px, transparent 4px),
+  radial-gradient(grey 3px, transparent 4px),
   linear-gradient(#fff 4px, transparent 0),
   linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
   linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
@@ -22,8 +22,38 @@ body, html {
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
+img{
+  width: 300px;
+  height: auto;
+  border: 5px solid #000;
+}
+
+ul {
+  list-style: none;
+}
+
 .post {
+  padding: 20px;
   background-color: rgb(211, 211, 211, 0.7);
+  border-radius: 20%;
+}
+
+.comment-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-body{
+width: 500px;
+height: 120px;
+border: 3px solid #000;
+padding: 20px;
+font-family: Tahoma, sans-serif;
+}
+
+.comment-button {
+  padding: 20px;
 }
 
 a {
@@ -242,15 +272,12 @@ main {
 }
 
 .comment-form {
-  margin-bottom: 5%;
+  
 }
 
 .comment {
   padding: 1%;
   margin-bottom: 1%;
-}
-
-.comment:nth-child(odd) {
   background-color: #fff5eb;
 }
 
@@ -283,7 +310,7 @@ main {
 
 .title {
   text-align: center;
-  font-size: xxx-large;
+  font-size: x-large;
   color: #B48E92;
   border-bottom: 1px solid #000;
 }
