@@ -20,7 +20,7 @@ class Post extends Model {
           'star_rating',
           // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
 
-          [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post_id = vote.post_id)'), 'star_rating']
+          [sequelize.literal('(SELECT AVG(star_rating) FROM vote WHERE post.id = vote.post_id)'), 'star_rating']
 
         ],
         include: [
