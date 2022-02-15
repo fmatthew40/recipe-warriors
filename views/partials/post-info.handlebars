@@ -5,8 +5,9 @@
   </div>
   <img src="{{picture_url}}"/>
   <div class="meta">
-    {{star_rating}} {{format_plural "star" star_rating}} | by {{user.username}} on {{format_date created_at}}
-    |
+   {{star_rating}} {{format_plural "star"}} on {{format_date created_at}}
+      {{!-- {{star_rating}} {{format_plural "star"}} last rated by {{user.username}} on {{format_date created_at}}   --}}
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
   </div>
+  
 </article>
