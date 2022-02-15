@@ -96,6 +96,7 @@ textarea, input {
   padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
+  width: 25%;
 }
 
 textarea:focus, input:focus {
@@ -144,6 +145,7 @@ header h1 {
 main {
   flex: 1;
   padding: 2% 4%;
+  text-align: center;
 }
 
 
@@ -200,6 +202,11 @@ main {
       outline-offset: 1px;
   }
 
+.login-form, .signup-form {
+  text-align: center;
+  font-size: xx-large;
+}
+
 .delete-post-btn {
   background-color: #d41414;
 }
@@ -212,6 +219,7 @@ main {
   margin-bottom: 2%;
   line-height: 150%;
 }
+
 
 .post .title span {
   font-style: italic;
@@ -277,6 +285,11 @@ main {
   text-align: center;
   font-size: xxx-large;
   color: #B48E92;
+  border-bottom: 1px solid #000;
+}
+
+.name {
+  font-size: xx-large;
 }
 
 footer {
