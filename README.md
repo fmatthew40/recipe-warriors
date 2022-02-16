@@ -12,7 +12,7 @@
   6.  [Contributing](#contributing)
 
  ## Screenshot
- ![Uploading recipe.png…]()
+ ![recipe](https://user-images.githubusercontent.com/93060262/154179869-0da3d258-be88-4f7f-9104-191fd908137f.png)
 
  ## Description
  The application compares user images to website recipes.  
