@@ -1,8 +1,7 @@
 
 async function starFormHandler(event) {
   event.preventDefault();
-  // const star_rating = document.querySelector('input[name="star_rating"]').value;
-  const star_rating = event.target.getAttribute('data-alt');//document.querySelector('.solid-stars').value;
+  const star_rating = event.target.getAttribute('data-alt');
   const post_id = window.location.toString().split('/')[
     window.location.toString().split('/').length - 1
   ];
